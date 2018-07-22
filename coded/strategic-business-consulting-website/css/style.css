@@ -172,6 +172,7 @@ p.heading-bold {
 
 div.contact-info {
 	display: flex;
+	justify-content: center;
 	color: white;
 }
 
