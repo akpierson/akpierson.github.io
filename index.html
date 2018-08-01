@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Remote Jobs Daily</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/css.css"> 
+</head>
+<body>
+    <header>
+        <div id="headerCentered">
+            <h1 class="title">Remote Jobs Daily</h1>
+            <img id="logo" src="assets/logo-plain.png">
+        </div>
+    </header>
+    <h1 class="announcer">Latest Jobs</h1>
+    <div id="app">
+        <template v-for="job in jobs">
+            <a class="job" v-bind:href="job.href" target="_blank">
+                <b><p class="title">{{ job.title }}</p></b>
+                <b><p class="company">{{ job.company }}</p></b>
+                <p class="date">{{ job.date }}</p>
+            </a>
+        </template>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/jobs.js"></script>
+</body>
+</html>

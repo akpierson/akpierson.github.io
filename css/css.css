@@ -1,0 +1,83 @@
+/*******TARGET EVERYTHING******/
+
+*, *:after, *:before {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+/*******BEGIN HEADER STUFF******/
+
+header {
+    height: 40vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../assets/topImage.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+div#headerCentered {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+
+h1.title {
+    color: white;
+    padding-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+img#logo {
+    width: 250px;
+    height: auto;
+    transition: all 0.5s;
+}
+
+img#logo:hover {
+    opacity: 0.7;
+}
+
+h1.announcer {
+    color: grey;
+    padding: 20px;
+    text-align: center;
+}
+
+a.job {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    border-top: 1px solid #ebebeb;
+    transition: all 0.5s
+}
+
+a.job:hover {
+    background: #ebebeb;
+}
+
+a.job:last-child {
+    border-bottom: 1px solid #ebebeb;
+}
+
+p.title {
+    color: #7F2AFF;
+}
+
+p.company {
+    color: black;
+}
+
+p.date {
+    color: grey;
+}
