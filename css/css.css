@@ -37,7 +37,7 @@ h1.title {
 }
 
 img#logo {
-    width: 250px;
+    width: 100px;
     height: auto;
     transition: all 0.5s;
 }
